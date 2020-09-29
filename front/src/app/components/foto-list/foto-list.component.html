@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-4 p-4" *ngFor="let foto of fotos">
+        <div class="card card-foto" (click)="selectedCard(foto._id)">
+            <div class="card-header">
+                {{foto.title}}</div>
+             
+                <img [src]="'http://localhost:3000/' + foto.imgPath" class="img-card-top w-50">
+                <div class="card-body">
+                    {{foto.descripcion}}
+            </div>
+        </div>
+
+         
+    </div>
+</div>
